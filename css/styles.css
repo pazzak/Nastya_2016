@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "PT Sans Caption";
+    src: url("../fonts/PT_Sans-Caption-Web-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans Caption Bold";
+    src: url("../fonts/PT_Sans-Caption-Web-Bold.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PT_Sans-Web-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans Italic";
+    src: url("../fonts/PT_Sans-Web-Italic.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans Bold";
+    src: url("../fonts/PT_Sans-Web-Bold.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans Bold Italic";
+    src: url("../fonts/PT_Sans-Web-BoldItalic.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Caption", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
+    font-weight: normal;
+    font-size: 12pt;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body-wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .body-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .body-wrapper {
+        width: 1024px;
+    }
+}
+
+.header__logo-wrapper {
+    position: relative;
+    height: 145px;
+    border-bottom: 8px solid #265a96;
+}
+
+.header__logo {
+    position: absolute;
+    right: 57px;
+    bottom: 14px;
+    width: 50%;
+}
+
+.header__nav-panel {
+    height: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-panel li {
+    list-style: none;
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+
+.header__nav-panel a {
+    display: inline-block;
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header__nav-panel a:hover,
+.header__nav-panel a:focus {
+    color: #5b5b5b;
+}
+
+.header__nav-panel__empty {
+    background-color: #898989;
+}
+
+.header__nav-panel__left-button {
+    background: linear-gradient(to left, #fff, #898989);
+}
+
+.header__nav-panel__right-button {
+    background: linear-gradient(to right, #fff, #898989);
+    text-align: right;
+}
+
+.content {
+    position: relative;
+    min-height: 500px;
+}
+
+.content-wrapper {
+    padding: 40px 75px 75px;
+}
+
+.content__left-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(to left, #fff, #808080);
+    z-index: -1;
+}
+
+.content__left-side {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 65px);
+}
+
+.assortment-text-wrapper {
+    margin: 28px 110px 0 40%;
+    text-align: right;
+}
+
+@media (max-width: 1279px) {
+    .assortment-text-wrapper {
+        margin-left: 25%;
+    }
+}
+
+.assortment-text {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.assortment-text span {
+    font-family: "PT Sans Caption Bold", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
+    color: #265a96;
+}
+
+.content__right-side {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% + 57px);
+}
+
+.assortment-item-wrapper {
+    display: table;
+    position: relative;
+    height: 114px;
+    margin: 14px 0 28px;
+}
+
+.assortment-item {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 142px;
+    text-transform: uppercase;
+    font-size: 16pt;
+    color: #5b5b5b;
+}
+
+.assortment-item span {
+    font-size: 18pt;
+    font-family: "PT Sans Caption Bold", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
+}
+
+.assortment-item:before {
+    content: '';
+    position: absolute;
+    width: 115px;
+    height: 114px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.assortment-item:hover,
+.assortment-item:focus {
+    color: #265a96;
+}
+
+.assortment-item.image-1:before {
+    background-image: url("../images/icon_1.png");
+}
+
+.assortment-item.image-1:hover:before,
+.assortment-item.image-1:focus:before {
+    background-image: url("../images/icon_1_hover.png");
+}
+
+.assortment-item.image-2:before {
+    background-image: url("../images/icon_2_opus.png");
+}
+
+.assortment-item.image-2:hover:before,
+.assortment-item.image-2:focus:before {
+    background-image: url("../images/icon_2_opus_hover.png");
+}
+
+.assortment-item.image-3:before {
+    background-image: url("../images/icon_3.png");
+}
+
+.assortment-item.image-3:hover:before,
+.assortment-item.image-3:focus:before {
+    background-image: url("../images/icon_3_hover.png");
+}
+
+.assortment-item.image-4:before {
+    background-image: url("../images/icon_4_kdm.png");
+}
+
+.assortment-item.image-4:hover:before,
+.assortment-item.image-4:focus:before {
+    background-image: url("../images/icon_4_kdm_hover.png");
+}
+
+.assortment-item.image-5:before {
+    background-image: url("../images/icon_5_diagnostics.png");
+}
+
+.assortment-item.image-5:hover:before,
+.assortment-item.image-5:focus:before {
+    background-image: url("../images/icon_5_diagnostics_hover.png");
+}
+
+.assortment-item.image-6:before {
+    background-image: url("../images/icon_6_tool.png");
+}
+
+.assortment-item.image-6:hover:before,
+.assortment-item.image-6:focus:before {
+    background-image: url("../images/icon_6_tool_hover.png");
+}
+
+.content__bottom {
+    margin-top: 86px;
+}
