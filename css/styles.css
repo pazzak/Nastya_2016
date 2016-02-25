@@ -45,6 +45,14 @@ span {
     font-family: "PT Sans Caption Bold", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
 }
 
+.pt-sans {
+    font-family: "PT Sans", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
+}
+
+.pt-sans span {
+    font-family: "PT Sans Bold", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
+}
+
 .upper {
     text-transform: uppercase;
 }
@@ -147,6 +155,7 @@ span {
 
 .content-wrapper {
     padding: 0 75px 75px;
+    overflow: hidden;
 }
 
 .content__left-gradient {
@@ -159,6 +168,8 @@ span {
     z-index: -1;
 }
 
+.columns50-50,
+.columns45-55,
 .columns35-65 {
     overflow: hidden;
 }
@@ -166,6 +177,14 @@ span {
 .content__left-side {
     margin-top: 40px;
     float: left;
+}
+
+.columns50-50 .content__left-side {
+    width: 50%;
+}
+
+.columns45-55 .content__left-side {
+    width: calc(50% - 85px);
 }
 
 .columns35-65 .content__left-side {
@@ -177,16 +196,36 @@ span {
     float: right;
 }
 
+.columns50-50 .content__right-side {
+    width: calc(50% - 57px);
+}
+
+.columns45-55 .content__right-side,
 .columns35-65 .content__right-side {
     width: calc(50% + 57px);
+}
+
+.inline {
+    word-spacing: 50px;
+}
+
+.inline .content__left-side,
+.inline .content__right-side {
+    float: none;
+    display: inline-block;
+    word-spacing: normal;
 }
 
 .content__full-width {
     margin-top: 40px;
 }
 
-.space-eater {
+.space-eater-36 {
     height: 36px;
+}
+
+.space-eater-92 {
+    height: 92px;
 }
 
 .text-block-wrapper {
@@ -288,4 +327,79 @@ span {
 .assortment-item.image-6:hover:before,
 .assortment-item.image-6:focus:before {
     background-image: url("../images/icon_6_tool_hover.png");
+}
+
+.megah1 {
+    font-size: 20pt;
+    text-align: center;
+    margin: 69px 0 39px;
+}
+
+.contact-wrapper .content__right-side {
+    margin-top: 20px;
+}
+
+.contact-item-wrapper {
+    display: table;
+    position: relative;
+    height: 143px;
+    margin: 14px 0 28px;
+}
+
+.contact-item-wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 142px;
+}
+
+.contact-item:before {
+    content: '';
+    position: absolute;
+    width: 115px;
+    height: 143px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.contact-item.image-contact-1:before {
+    background-image: url("../images/Contacts_Kuznetsov.png");
+}
+
+.contact-item.image-contact-2:before {
+    background-image: url("../images/Contacts_Balashov.png");
+}
+
+.contact-item.image-contact-3:before {
+    background-image: url("../images/Contacts_Basova.png");
+}
+
+.document-link {
+    position: relative;
+    padding-left: 50px;
+    height: 24px;
+}
+
+.document-link:before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/icon_download.png");
+    width: 27px;
+    height: 24px;
+    left: 12px;
+    overflow: hidden;
+}
+
+.document-link:hover,
+.document-link:focus {
+    color: #265a96;
+}
+
+.document-link:hover:before,
+.document-link:focus:before {
+    background-image: url("../images/icon_download_hover.png");
 }
