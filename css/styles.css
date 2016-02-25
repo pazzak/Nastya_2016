@@ -41,6 +41,34 @@ a {
     text-decoration: none;
 }
 
+span {
+    font-family: "PT Sans Caption Bold", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.color-g {
+    color: #5b5b5b;
+}
+
+.color-b {
+    color: #265a96;
+}
+
+.size-18 {
+    font-size: 18pt;
+}
+
+.size-16 {
+    font-size: 16pt;
+}
+
+.size-14 {
+    font-size: 14pt;
+}
+
 .body-wrapper {
     width: 1280px;
     margin: 0 auto;
@@ -118,7 +146,7 @@ a {
 }
 
 .content-wrapper {
-    padding: 40px 75px 75px;
+    padding: 0 75px 75px;
 }
 
 .content__left-gradient {
@@ -131,37 +159,49 @@ a {
     z-index: -1;
 }
 
-.content__left-side {
-    display: inline-block;
-    vertical-align: top;
-    width: calc(50% - 65px);
+.columns35-65 {
+    overflow: hidden;
 }
 
-.assortment-text-wrapper {
-    margin: 28px 110px 0 40%;
+.content__left-side {
+    margin-top: 40px;
+    float: left;
+}
+
+.columns35-65 .content__left-side {
+    width: calc(50% - 171px);
+}
+
+.content__right-side {
+    margin-top: 40px;
+    float: right;
+}
+
+.columns35-65 .content__right-side {
+    width: calc(50% + 57px);
+}
+
+.content__full-width {
+    margin-top: 40px;
+}
+
+.space-eater {
+    height: 36px;
+}
+
+.text-block-wrapper {
+    margin-top: 28px;
+}
+
+.text-block-wrapper.align-right {
+    margin-left: 40%;
     text-align: right;
 }
 
 @media (max-width: 1279px) {
-    .assortment-text-wrapper {
+    .text-block-wrapper.align-right {
         margin-left: 25%;
     }
-}
-
-.assortment-text {
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-.assortment-text span {
-    font-family: "PT Sans Caption Bold", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
-    color: #265a96;
-}
-
-.content__right-side {
-    display: inline-block;
-    vertical-align: top;
-    width: calc(50% + 57px);
 }
 
 .assortment-item-wrapper {
@@ -171,18 +211,14 @@ a {
     margin: 14px 0 28px;
 }
 
+.assortment-item-wrapper:last-child {
+    margin-bottom: 0;
+}
+
 .assortment-item {
     display: table-cell;
     vertical-align: middle;
     padding-left: 142px;
-    text-transform: uppercase;
-    font-size: 16pt;
-    color: #5b5b5b;
-}
-
-.assortment-item span {
-    font-size: 18pt;
-    font-family: "PT Sans Caption Bold", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
 }
 
 .assortment-item:before {
@@ -252,8 +288,4 @@ a {
 .assortment-item.image-6:hover:before,
 .assortment-item.image-6:focus:before {
     background-image: url("../images/icon_6_tool_hover.png");
-}
-
-.content__bottom {
-    margin-top: 86px;
 }
