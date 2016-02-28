@@ -65,6 +65,10 @@ span {
     line-height: 28px;
 }
 
+.line-height-36 {
+    line-height: 36px;
+}
+
 .align-center {
     text-align: center;
 }
@@ -95,6 +99,26 @@ span {
 
 .size-14 {
     font-size: 14pt;
+}
+
+.size-12 {
+    font-size: 12pt;
+}
+
+.point {
+    display: inline;
+    position: relative;
+}
+
+.point:before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 10px;
+    left: -17px;
+    overflow: hidden;
+    background-image: url("../images/point.png");
 }
 
 .body-wrapper {
