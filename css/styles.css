@@ -110,6 +110,10 @@ span {
     position: relative;
 }
 
+.point span {
+    font-family: "PT Sans Caption", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
+}
+
 .point:before {
     content: '';
     position: absolute;
@@ -200,6 +204,7 @@ span {
     z-index: -1;
 }
 
+.columns50-48,
 .columns50-50,
 .columns45-55,
 .columns35-65 {
@@ -211,6 +216,7 @@ span {
     float: left;
 }
 
+.columns50-48 .content__left-side,
 .columns50-50 .content__left-side {
     width: 50%;
 }
@@ -226,6 +232,10 @@ span {
 .content__right-side {
     margin-top: 40px;
     float: right;
+}
+
+.columns50-48 .content__right-side {
+    width: calc(50% - 25px);
 }
 
 .columns50-50 .content__right-side {
@@ -433,4 +443,12 @@ span {
 .document-link:hover:before,
 .document-link:focus:before {
     background-image: url("../images/icon_download_hover.png");
+}
+
+.download-links-wrapper > .document-link {
+    padding: 0;
+}
+
+.download-links-wrapper > .document-link:before {
+    left: -38px;
 }
