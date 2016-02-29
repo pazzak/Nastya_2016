@@ -69,6 +69,10 @@ span {
     line-height: 36px;
 }
 
+.align-left {
+    text-align: left;
+}
+
 .align-center {
     text-align: center;
 }
@@ -216,7 +220,10 @@ span {
     float: left;
 }
 
-.columns50-48 .content__left-side,
+.columns50-48 .content__left-side {
+    width: calc(50% - 50px);
+}
+
 .columns50-50 .content__left-side {
     width: 50%;
 }
