@@ -49,6 +49,7 @@ span {
     font-family: "PT Sans", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
 }
 
+.pt-sans-bold,
 .pt-sans span {
     font-family: "PT Sans Bold", "Myriad Pro", "Trebuchet MS", Ubuntu, sans-serif;
 }
@@ -148,44 +149,64 @@ span {
 }
 
 .header__nav-panel {
-    height: 13px;
+    position: relative;
+    height: 30px;
     margin: 0;
     padding: 0;
 }
 
-.header__nav-panel li {
+.header__nav-panel__background {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header__nav-panel__background li {
     list-style: none;
     float: left;
     height: 100%;
     width: 25%;
 }
 
-.header__nav-panel a {
-    display: inline-block;
-    -moz-transform: translateY(-4px);
-    -ms-transform: translateY(-4px);
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.header__nav-panel a:hover,
-.header__nav-panel a:focus {
-    color: #5b5b5b;
-}
-
-.header__nav-panel__empty {
+.header__nav-panel__background__empty {
     background-color: #898989;
 }
 
-.header__nav-panel__left-button {
-    background: linear-gradient(to left, #fff, #898989);
+.header__nav-panel__background__left-button {
+    background: linear-gradient(to left, #CBCBCB, #898989);
 }
 
-.header__nav-panel__right-button {
-    background: linear-gradient(to right, #fff, #898989);
+.header__nav-panel__background__right-button {
+    background: linear-gradient(to right, #CBCBCB, #898989);
     text-align: right;
+}
+
+.header__nav-panel__menu {
+    height: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.header__nav-panel__menu li {
+    display: inline-block;
+    height: 100%;
+    width: 252px;
+}
+
+.header__nav-panel__menu a {
+    display: inline-block;
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+.header__nav-panel__menu a:hover,
+.header__nav-panel__menu a:focus {
+    color: #5b5b5b;
 }
 
 .content {
