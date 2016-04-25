@@ -481,3 +481,18 @@ span {
 .download-links-wrapper > .document-link:before {
     left: -38px;
 }
+
+.content__grid-wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.content__grid-item {
+    float: left;
+    width: 19%;
+    margin: 15px 3%;
+}
+
+.content__grid-item img {
+    width: 100%;
+}
